@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "ibase=water; obase=bestchol; $WATER + $STIR" | bc
+echo "ibase=water" | tr '[a-z]' "$WATER" | bc | tr '[0-9a-z]' '[a-j]'
