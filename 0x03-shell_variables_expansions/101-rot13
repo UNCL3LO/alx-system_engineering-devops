@@ -1,2 +1,2 @@
-#!/ova/onfu
-ge 'N-Mn-m' 'A-MN-Za-mn-z' < vachg.gkg
+#!/bin/bash
+echo "Hello, World!" | tr 'A-Za-z' 'N-ZA-Mn-za-m'
