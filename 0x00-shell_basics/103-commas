@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -A1 | LC_COLLATE=C sort -d --ignore='[/\.]' | awk '{ORS = (NR%2 == 0) ? ",\n" : ","} {print $0}'
