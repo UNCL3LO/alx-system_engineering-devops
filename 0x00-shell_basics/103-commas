@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -A1 -v | awk '{ORS = (NR%2 == 0) ? ",\n" : ","} {print $0}' | sed 's#/$#/#'
+ls -Ap1 | awk 'BEGIN{ORS=","} {if(NR>2) print $0} END{print ""}' | sed 's/,$/\n/'
